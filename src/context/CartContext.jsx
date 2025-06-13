@@ -3,6 +3,7 @@ import React, { createContext, useState, useEffect } from "react";
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
+<<<<<<< HEAD
   const [cartItems, setCartItems] = useState([]);
   const [warning, setWarning] = useState("");
 
@@ -13,6 +14,17 @@ export const CartProvider = ({ children }) => {
     }
   }, []);
 
+=======
+  // Load cart from localStorage on first render
+  const [cartItems, setCartItems] = useState(() => {
+    const storedCart = localStorage.getItem("cart");
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
+
+  const [warning, setWarning] = useState("");
+
+  // Save cart to localStorage whenever it changes
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cartItems));
   }, [cartItems]);
@@ -83,6 +95,10 @@ export const CartProvider = ({ children }) => {
         getTotal,
         warning,
         setWarning,
+<<<<<<< HEAD
+=======
+        setCartItems,
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
       }}
     >
       {children}

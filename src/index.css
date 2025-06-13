@@ -47,12 +47,25 @@ h1, h2, h3 {
 }
 
 /* Navigation */
+<<<<<<< HEAD
+=======
+.nav-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #e9e9f1;
+<<<<<<< HEAD
   padding: 1rem 2rem;
+=======
+  padding: 1.5rem 2rem;
+  min-height: 72px;
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
   width: 100%;
   border-radius: 0 0 1rem 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -60,7 +73,11 @@ h1, h2, h3 {
   top: 0;
   z-index: 10;
   box-sizing: border-box;
+<<<<<<< HEAD
   overflow-x: hidden;
+=======
+  overflow: hidden;
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
   flex-wrap: wrap;
 }
 
@@ -77,14 +94,25 @@ h1, h2, h3 {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
+<<<<<<< HEAD
   overflow-x: auto;
   flex: 1;
+=======
+  overflow: hidden; /* prevent scroll */
+  flex: 1;
+  min-width: 0; /* allow shrinking */
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 }
 
 .nav-item img {
   width: 28px;
   height: 28px;
   object-fit: contain;
+<<<<<<< HEAD
+=======
+  margin: 0 1px;
+  display: block;
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 }
 
 /* Mobile layout adjustment */
@@ -98,16 +126,49 @@ h1, h2, h3 {
 
   .nav-icons {
     justify-content: flex-start;
+<<<<<<< HEAD
     width: 100%;
     flex-wrap: wrap;
     overflow-x: visible;
   }
 }
 
+=======
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+}
+
+.nav-cart-icon {
+  position: relative;
+  display: inline-block;
+}
+
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 .nav-item img:hover {
   transform: scale(1.15);
 }
 
+<<<<<<< HEAD
+=======
+.cart-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background-color: red;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 5px;
+  line-height: 1;
+  transform: translate(20%, 20%);
+  max-width: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 /* Buttons */
 button {
   background-color: #f3f3f3;
@@ -128,6 +189,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+<<<<<<< HEAD
+=======
+.disabled-button {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 /* Cart styling */
 .cart-section {
   display: flex;
@@ -160,6 +234,7 @@ button:focus-visible {
 
 .cart-item {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
@@ -172,6 +247,45 @@ button:focus-visible {
   color: #000;
 }
 
+=======
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+  color: #000;
+}
+
+.cart-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.cart-item-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cart-quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 .cart-item-name {
   display: flex;
   flex-direction: column;
@@ -255,11 +369,19 @@ button:focus-visible {
   width: 220px;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   justify-content: space-between;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   height: 360px; /* Force consistent card height */
   box-sizing: border-box;
+=======
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 360px;
+  box-sizing: border-box;
+  color: #111;
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 }
 
 .product-card img {
@@ -270,18 +392,32 @@ button:focus-visible {
   border-radius: 0.5rem;
 }
 
+<<<<<<< HEAD
 .product-card h3 {
   font-size: 1.1rem;
   margin: 0.5rem 0;
   flex-grow: 0;
+=======
+.product-card h2 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.25rem;
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 }
 
 .product-card p {
   font-size: 0.9rem;
+<<<<<<< HEAD
   flex-grow: 1;
   margin-bottom: 1rem;
 }
 
+=======
+  margin: 0.25rem 0;
+  flex-grow: 1;
+}
+
+/* Ensures button stays at bottom even with short content */
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 .product-card button {
   margin-top: auto;
   padding: 0.5rem 1rem;
@@ -291,6 +427,153 @@ button:focus-visible {
   cursor: pointer;
   transition: background 0.2s ease;
 }
+<<<<<<< HEAD
 .product-card button:hover {
   background-color: #ddd;
 }
+=======
+
+.product-card button:hover {
+  background-color: #ddd;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: #111;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  z-index: 1100;
+  border: 2px solid #000;
+}
+
+.credit-card-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;   /* LIGHT background */
+  color: #000;                 /* DARK text */
+}
+
+.credit-card-form input::placeholder {
+  color: #777; /* or #555 for more contrast */
+}
+
+.credit-card-form h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.credit-card-form button[type="submit"] {
+  display: block;
+  margin: 1.25rem auto 0 auto;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.credit-card-form button[type="submit"]:hover {
+  background-color: #222;
+}
+
+.movie-scroll-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.movie-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+.movie-card {
+  flex: 0 0 auto;
+  width: 180px;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #111
+}
+
+.movie-poster {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  font-size: 1.75rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  /* Center arrow character */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  line-height: 1; /* Prevent baseline offset */
+}
+
+.scroll-btn.left {
+  left: -20px; 
+}
+
+.scroll-btn.right {
+  right: -20px;
+}
+
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)

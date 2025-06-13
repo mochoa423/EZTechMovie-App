@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const list = [
+=======
+const products = [
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
   {
     id: 1,
     service: "Basic Subscription",
@@ -73,4 +77,8 @@ const list = [
   },
 ];
 
+<<<<<<< HEAD
 export default list;
+=======
+export default products;
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)

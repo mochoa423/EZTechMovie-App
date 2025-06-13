@@ -5,6 +5,10 @@ import Home from "./context/Home";
 import About from "./context/About";
 import Movies from "./context/Movies";  
 import Cart from "./context/Cart";
+<<<<<<< HEAD
+=======
+import CreditCardForm from './context/CreditCardForm';
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 
 const App = () => {
   return (
@@ -17,6 +21,10 @@ const App = () => {
             <Route path="/movies" element={<Movies />} /> {/* Products from data.jsx */}
             <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
+<<<<<<< HEAD
+=======
+			<Route path="/payment" element={<CreditCardForm />} />
+>>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
           </Routes>
         </main>
       </div>
