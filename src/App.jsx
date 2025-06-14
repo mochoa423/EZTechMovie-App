@@ -5,6 +5,8 @@ import Home from "./context/Home";
 import About from "./context/About";
 import Movies from "./context/Movies";  
 import Cart from "./context/Cart";
+import LoginButton from './context/LoginButton';
+import Callback from './context/Callback';
 <<<<<<< HEAD
 =======
 import CreditCardForm from './context/CreditCardForm';
@@ -18,6 +20,7 @@ const App = () => {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+	    <Route path="/callback" element={<Callback />} />	  
             <Route path="/movies" element={<Movies />} /> {/* Products from data.jsx */}
             <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
@@ -31,5 +34,12 @@ const App = () => {
     </Router>
   );
 };
+
+const logout = () => {
+  localStorage.removeItem("access_token");
+  window.location.href = "/";
+};
+
+<button onClick={logout}>Logout</button>
 
 export default App;
