@@ -12,11 +12,18 @@ import Callback from './context/Callback';
 import CreditCardForm from './context/CreditCardForm';
 >>>>>>> 2e9bc5e (Added Page Adjustments, Credit Card Security, Credit Card Form, Etc.)
 
+const logout = () => {
+  localStorage.removeItem("access_token");
+  window.location.href = "/";
+};
+
 const App = () => {
   return (
     <Router>
       <div className="app-container">
         <Navigation />
+	<LoginButton />
+        <button onClick={logout}>Logout</button>
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -34,12 +41,5 @@ const App = () => {
     </Router>
   );
 };
-
-const logout = () => {
-  localStorage.removeItem("access_token");
-  window.location.href = "/";
-};
-
-<button onClick={logout}>Logout</button>
 
 export default App;
