@@ -1,4 +1,4 @@
-const list = [
+const products = [
   {
     id: 1,
     service: "Basic Subscription",
@@ -73,4 +73,4 @@ const list = [
   },
 ];
 
-export default list;
+export default products;
